@@ -1,5 +1,9 @@
 package test;
 
+import java.time.LocalDate;
+
+import metier.Achat;
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -14,6 +18,10 @@ public class Test {
 		Jeu j3 = new Jeu("Fifa 22", c2);
 		Jeu j4 = new Jeu("Fifa 21", c2);
 		Jeu j5 = new Jeu("Skyrim", c2);
+		
+		Client cl1 = new Client("william", "shakespeare");
+		
+		cl1.addAchat( new Achat(j1, LocalDate.now(), 30 ) );
 	}
 
 }
