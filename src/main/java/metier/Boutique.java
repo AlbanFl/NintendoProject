@@ -3,11 +3,11 @@ package metier;
 public class Boutique {
 
 	private String nomBoutique;
-	private String nomAdresse;
-	public Boutique(String nomBoutique, String nomAdresse) {
+	private Adresse adresse;
+	public Boutique(String nomBoutique, Adresse adresse) {
 		super();
 		this.nomBoutique = nomBoutique;
-		this.nomAdresse = nomAdresse;
+		this.adresse = adresse;
 	}
 	public String getNomBoutique() {
 		return nomBoutique;
@@ -17,8 +17,8 @@ public class Boutique {
 	}
 	@Override
 	public String toString() {
-		return "Boutique [nomBoutique=" + nomBoutique + ", nomAdresse=" + nomAdresse + "]";
+		return "Boutique [nomBoutique=" + nomBoutique + ", adresse=" + adresse + "]";
 	}
-	
-	
+
+
 }
