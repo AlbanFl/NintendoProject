@@ -1,6 +1,6 @@
 package metier;
 
-public class Console {
+abstract class Console {
 
 	private String nom;
 
