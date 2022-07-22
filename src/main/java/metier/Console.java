@@ -1,11 +1,16 @@
 package metier;
 
 abstract class Console {
+import java.time.LocalDate;
 
 	private String nom;
+	private int prix;
+	private LocalDate dateSortie;
 
-	public Console(String nom) {
+	public Console(String nom, int prix, LocalDate dateSortie) {
 		this.nom = nom;
+		this.prix=prix;
+		this.dateSortie= dateSortie;
 	}
 
 	public String getNom() {
@@ -18,7 +23,7 @@ abstract class Console {
 
 	@Override
 	public String toString() {
-		return "Console [nom=" + nom + "]";
+		return "Console [nom=" + nom + ", prix=" + prix + ", dateSortie=" + dateSortie + "]";
 	}
 	
 	
